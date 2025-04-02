@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Your Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bruno Books</h1>
+            <p class="tagline">Books for Every Soul</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="welcome-section">
+            <br>
+            <p class="discover">
+                Discover a world of books at your fingertips. Browse our extensive collection 
+                and find your next favorite read today.
+            </p>
+            <br>
+            <div class="event-box">
+                <h3>Library Annual Day Celebration</h3>
+                <p>Join us for our annual celebration with special discounts and events!</p>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="blinking-text" class="blinking-text">
+                <a href="regis.html">New User? Register Now for Exclusive Benefits!</a>
+            </div>
+        </section>
+        
+        <section class="categories-section">
+            <h2>Book Categories</h2>
+            <div class="categories-grid">
+                <button class="category-button" data-category="fiction">
+                    <h3>Fiction</h3>
+                    <p>Novels, short stories, and literary works of imagination</p>
+                </button>
+                <button class="category-button" data-category="non-fiction">
+                    <h3>Non-Fiction</h3>
+                    <p>Biographies, memoirs, and factual literature</p>
+                </button>
+                <button class="category-button" data-category="sci-fi">
+                    <h3>Science Fiction</h3>
+                    <p>Futuristic concepts, space exploration, and technology</p>
+                </button>
+                <button class="category-button" data-category="mystery">
+                    <h3>Mystery & Thriller</h3>
+                    <p>Suspenseful tales of crime, detection, and intrigue</p>
+                </button>
+                <button class="category-button" data-category="self-help">
+                    <h3>Self-Help</h3>
+                    <p>Personal development, motivation, and life improvement</p>
+                </button>
+                <button class="category-button" data-category="children">
+                    <h3>Children's Books</h3>
+                    <p>Stories and educational content for young readers</p>
+                </button>
+            </div>
+        </section>
+        
+        <section id="selected-category" class="selected-category-section" style="display: none;">
+            <div class="section-header">
+                <h2 id="category-title">Category Title</h2>
+                <button id="back-button" class="back-button">Back to Categories</button>
+            </div>
+            <p id="category-description">Category description will appear here.</p>
+            <div id="category-books" class="books-grid">
+                <!-- Books will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookHaven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

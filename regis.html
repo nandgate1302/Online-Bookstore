@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - BookHaven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BookHaven</h1>
+            <p class="tagline">User Registration</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <div class="form-container">
+            <h2>Create an Account</h2>
+            
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName">
+                    <span class="error" id="fullNameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number (optional)</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                    <span class="error" id="phoneNumberError"></span>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms">
+                        I agree to the Terms and Conditions
+                    </label>
+                    <span class="error" id="agreeTermsError"></span>
+                </div>
+                
+                <button type="submit" id="submitButton">Register</button>
+            </form>
+            
+            <div class="form-footer">
+                <a href="index.html">Return to Homepage</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BookHaven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
